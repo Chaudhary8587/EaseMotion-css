@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ease Slide Out Bottom Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="target-box" class="demo-card">F</div>
+  <button class="btn-replay" onclick="triggerExit()">Trigger Exit Animation</button>
+
+  <script>
+    function triggerExit() {
+      const box = document.getElementById('target-box');
+      box.classList.remove('ease-slide-out-bottom');
+      void box.offsetWidth; // Force a DOM element repaint cycle
+      box.classList.add('ease-slide-out-bottom');
+    }
+  </script>
+</body>
+</html>

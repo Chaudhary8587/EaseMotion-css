@@ -1,0 +1,51 @@
+/* Exit animations */
+@keyframes easeSlideOutBottom {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+.ease-slide-out-bottom {
+  animation: easeSlideOutBottom 0.45s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+/* Presentation layout scaffolding */
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #0f172a;
+  color: #f8fafc;
+  margin: 0;
+}
+
+.demo-card {
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 2rem;
+  box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.5);
+}
+
+.btn-replay {
+  margin-top: 40px;
+  padding: 10px 20px;
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  color: #e2e8f0;
+  border-radius: 6px;
+  cursor: pointer;
+}
